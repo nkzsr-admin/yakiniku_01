@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>焼肉 なは | 那覇市小禄店</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --jp-font: 'Noto Serif JP', serif;
+      --en-font: 'Playfair Display', serif;
+    }
+    body { font-family: var(--jp-font); }
+    .font-en { font-family: var(--en-font); }
+  </style>
+</head>
+<body class="text-gray-900 antialiased">
+
+<!-- =================== Header =================== -->
+<header class="w-full fixed top-0 left-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2">
+      <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1920&q=80" alt="Yakiniku Ushigoro" class="h-8 w-8 object-cover rounded-full" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex items-center gap-8 text-sm tracking-wide">
+      <a href="#info" class="hover:opacity-70">店舗情報</a>
+      <a href="#takeout" class="hover:opacity-70">テイクアウト＆デリバリー</a>
+      <a href="#online" class="hover:opacity-70">オンライン内店</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button id="hamburger" class="md:hidden flex flex-col justify-between w-6 h-5">
+      <span class="block w-full h-0.5 bg-gray-900"></span>
+      <span class="block w-full h-0.5 bg-gray-900"></span>
+      <span class="block w-full h-0.5 bg-gray-900"></span>
+    </button>
+  </div>
+</header>
+
+<!-- =================== Mobile Full‑Screen Menu =================== -->
+<div id="mobileMenu" class="fixed inset-0 z-40 hidden flex flex-col bg-white/80 backdrop-blur">
+  <nav class="flex-1 flex flex-col items-center justify-center space-y-8 text-lg font-medium">
+    <a href="#info" class="hover:opacity-70">店舗情報</a>
+    <a href="#takeout" class="hover:opacity-70">テイクアウト＆デリバリー</a>
+    <a href="#online" class="hover:opacity-70">オンライン内店</a>
+  </nav>
+  <!-- SNS -->
+  <div class="flex justify-center gap-8 py-8">
+    <a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.332v21.336C0 23.403.597 24 1.332 24h11.492v-9.277H9.691v-3.622h3.133V8.406c0-3.1 1.892-4.788 4.659-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.716-1.794 1.765v2.316h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.668V1.332C24 .597 23.403 0 22.675 0z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/sora.nakaza/" aria-label="Instagram" class="hover:text-gray-700">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- Spacer for fixed header -->
+<div class="pt-[64px]"></div>
+
+<!-- =================== Hero =================== -->
+<section>
+  <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=1920&q=80" alt="Restaurant Interior" class="w-full h-72 sm:h-96 md:h-[520px] object-cover" />
+</section>
+
+<!-- =================== Store Info =================== -->
+<section id="info" class="max-w-screen-md mx-auto px-4 sm:px-6 py-12 space-y-8">
+  <!-- Headline & Language Toggle -->
+  <div class="text-center space-y-2">
+    <h1 class="text-2xl sm:text-3xl font-bold lang-jp">那覇市小禄店</h1>
+    <h1 class="text-2xl sm:text-3xl font-bold lang-en hidden">NAHA OROKU ST.</h1>
+
+    <p class="font-en text-xs tracking-wider">NAHA OROKU ST.</p>
+
+  </div>
+
+  <!-- Details + Map -->
+  <div class="md:grid md:grid-cols-2 md:gap-6">
+    <!-- Details -->
+    <dl class="space-y-4 text-sm leading-relaxed">
+      <div>
+        <dt class="font-semibold">住所</dt>
+        <dd>沖縄県那覇市小禄1-2-3 オロクビル11F</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">電話</dt>
+        <dd>00-0000-0000</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">アクセス</dt>
+        <dd class="space-y-1">
+          <p>⚪︎⚪︎⚪︎より徒歩2分</p>
+          <p>⚪︎⚪︎⚪︎より徒歩5分</p>
+          <p>⚪︎⚪︎⚪︎より駅 ⚪︎⚪︎⚪出口より徒歩7分</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="font-semibold">営業時間</dt>
+        <dd>
+          <p>年中無休</p>
+          <p>月・火 17:00〜23:30 (L.O. 22:30)</p>
+          <p>水〜金 12:00〜15:00 (L.O. 14:00) / 17:00〜23:30 (L.O. 22:30)</p>
+          <p>土日祝 11:30〜23:30 (L.O. 22:30)</p>
+        </dd>
+      </div>
+      <div>
+        <dt class="font-semibold">カード</dt>
+        <dd>VISA, Master, JCB, AMEX, Diners</dd>
+      </div>
+      <div>
+        <dt class="font-semibold">席数</dt>
+        <dd>20席（完全個室 1部屋 最大8名様）</dd>
+      </div>
+    </dl>
+
+    <!-- Map -->
+    <div class="mt-8 md:mt-0">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5666384922806!2d139.76214437626828!3d35.671027972587774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7f31154ec3%3A0x18ec3a8b443e71a9!2z6auY5bSO44Ki44Kr5rOV!5e0!3m2!1sja!2sjp!4v1717500000000!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- =================== Menu Buttons =================== -->
+<section class="max-w-screen-md mx-auto px-4 sm:px-6 space-y-4 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
+  <a href="https://ushigoro.com/menu/food_ginza_namiki.pdf" target="_blank" rel="noopener" class="block border border-gray-400 text-center py-4 font-semibold tracking-wider hover:bg-gray-50">フードメニュー<br><span class="font-en text-xs">FOOD MENU</span></a>
+  <a href="https://ushigoro.com/menu/drink_ginza_namiki.pdf" target="_blank" rel="noopener" class="block border border-gray-400 text-center py-4 font-semibold tracking-wider hover:bg-gray-50">ドリンクメニュー<br><span class="font-en text-xs">DRINK MENU</span></a>
+  <a href="https://ushigoro.com/menu/seasonal_ginza_namiki.pdf" target="_blank" rel="noopener" class="block border border-gray-400 text-center py-4 font-semibold tracking-wider hover:bg-gray-50">季節メニュー<br><span class="font-en text-xs">SEASONAL MENU</span></a>
+  <a href="https://ushigoro.com/menu/lunch_ginza_namiki.pdf" target="_blank" rel="noopener" class="block border border-gray-400 text-center py-4 font-semibold tracking-wider hover:bg-gray-50">ランチメニュー<br><span class="font-en text-xs">LUNCH MENU</span></a>
+</section>
+
+<!-- =================== Action Buttons =================== -->
+<section class="max-w-screen-md mx-auto px-4 sm:px-6 mt-10 space-y-4">
+  <a href="#reservation" class="block bg-gray-200 text-center py-5 font-en tracking-wider text-lg hover:bg-gray-300">Reservation オンライン予約</a>
+  <a href="#takeout" class="block bg-gray-200 text-center py-5 font-en tracking-wider text-lg hover:bg-gray-300">テイクアウト & デリバリー</a>
+  <a href="#online" class="block bg-gray-200 text-center py-5 font-en tracking-wider text-lg hover:bg-gray-300">サングオンラインストア</a>
+</section>
+
+
+<!-- =================== Footer =================== -->
+<footer class="mt-16 bg-[#111] text-gray-300 text-sm">
+  <div class="max-w-screen-md mx-auto px-4 sm:px-6 py-12 space-y-8 text-center">
+    <!-- SNS -->
+    <div class="flex justify-center gap-6 text-xl">
+      <a href="https://www.facebook.com/" aria-label="Facebook" class="hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.332v21.336C0 23.403.597 24 1.332 24h11.492v-9.277H9.691v-3.622h3.133V8.406c0-3.1 1.892-4.788 4.659-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.716-1.794 1.765v2.316h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.668V1.332C24 .597 23.403 0 22.675 0z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/sora.nakaza/" aria-label="Instagram" class="hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+      </a>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="divide-y divide-gray-700 max-w-xs mx-auto text-center text-xs">
+      <a href="#" class="block py-3 hover:text-white">リクルート  RECRUIT</a>
+      <a href="#" class="block py-3 hover:text-white">ブランドリスト  BRAND LIST</a>
+      <a href="#" class="block py-3 hover:text-white">ニュースレター  NEWS LETTER</a>
+    </div>
+
+    <p class="text-xs text-gray-500">© Sangue, Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- =================== Scripts =================== -->
+<script>
+  // Mobile nav toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
